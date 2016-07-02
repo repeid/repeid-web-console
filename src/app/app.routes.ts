@@ -1,8 +1,8 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
 
-/*import { DashboardComponent } from './dashboard.component';
-import { HeroesComponent } from './heroes.component';
-import { HeroDetailComponent } from './hero-detail.component';
+import { DashboardComponent } from './dashboard';
+import { HeroesComponent } from './heroes';
+import { HeroDetailComponent } from './hero-detail';
 
 export const routes: RouterConfig = [
   {
@@ -26,4 +26,4 @@ export const routes: RouterConfig = [
 
 export const APP_ROUTER_PROVIDERS = [
   provideRouter(routes)
-];*/
+];
