@@ -45,6 +45,10 @@ const barrels: string[] = [
   'app',
   'app/shared',
   'app/my-component',
+  'app/layout',
+  'app/layout/header',
+  'app/layout/sidebar',
+  'app/layout/container',
   /** @cli-barrel */
 ];
 

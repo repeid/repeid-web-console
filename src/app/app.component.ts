@@ -1,5 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { MyComponentComponent } from './my-component';
+import { HeaderComponent } from './layout/header';
+import { SidebarComponent } from './layout/sidebar';
+import { ContainerComponent } from './layout/container';
 
 @Component({
   moduleId: module.id,
@@ -7,7 +9,7 @@ import { MyComponentComponent } from './my-component';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css', '../styles/main.css'],
   encapsulation: ViewEncapsulation.None,
-  directives: [MyComponentComponent]
+  directives: [HeaderComponent, SidebarComponent, ContainerComponent]
 })
 export class AppComponent {
   title = 'app works!';
