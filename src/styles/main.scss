@@ -1,7 +1,6 @@
-$icon-font-path: "../fonts/bootstrap/";
-
-$font-path: "../fonts/patternfly/";
-$fa-font-path: "../fonts/font-awesome/";
+$fa-font-path:      "../fonts/font-awesome/";
+$font-path:         "../fonts/patternfly";
+$icon-font-path:    "../fonts/bootstrap/";
 
 @import "patternfly-sprockets";
 @import "patternfly";
