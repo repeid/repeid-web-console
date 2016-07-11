@@ -1,24 +1,11 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
-
-import { HeroService } from './hero.service';
+import { Component } from '@angular/core';
 
 @Component({
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css'],
-  directives: [ROUTER_DIRECTIVES],
-  providers: [
-    HeroService
-  ]
+  styleUrls: ['app.component.css']
 })
 export class AppComponent {
-
-  title = 'Tour of Heroes';
-
-  constructor () {
-
-  }
-
+  title = 'app works!';
 }
