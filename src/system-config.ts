@@ -49,6 +49,12 @@ const barrels: string[] = [
   'app/layout/header',
   'app/layout/sidebar',
   'app/layout/container',
+  'app/pages/home',
+  'app/pages/about',
+  'app/modules/facturas',
+  'app/modules/boletas',
+  'app/modules/facturas/facturas-nuevo',
+  'app/modules/facturas/facturas-editar',
   /** @cli-barrel */
 ];
 
