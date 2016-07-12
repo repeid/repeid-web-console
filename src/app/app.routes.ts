@@ -6,8 +6,8 @@ import { FacturaRoutes } from './modules/facturas';
 export const routes: RouterConfig = [
   /*{
     path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
+    redirectTo: '/home'
+    //pathMatch: 'full'
   },*/
   {
     path: 'home',
