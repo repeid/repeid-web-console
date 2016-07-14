@@ -7,7 +7,7 @@ import { ContainerComponent } from './layout/container';
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css', '../styles/main.css'],
+  styleUrls: ['app.component.css'],
   encapsulation: ViewEncapsulation.None,
   directives: [HeaderComponent, SidebarComponent, ContainerComponent]
 })
