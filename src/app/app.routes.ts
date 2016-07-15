@@ -7,7 +7,7 @@ export const routes: RouterConfig = [
   /*{
     path: '',
     redirectTo: '/home'
-    //pathMatch: 'full'
+    pathMatch: 'full'
   },*/
   {
     path: 'home',
