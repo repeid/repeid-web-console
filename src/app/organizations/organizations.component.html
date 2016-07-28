@@ -1,0 +1,27 @@
+<default-header></default-header>
+<div class="container-fluid container-cards-pf">
+
+    <div class="row row-cards-pf">
+        <div class="col-md-10 col-md-offset-1">
+            
+            <!--Header page-->
+            <h1 style="margin: 10px 0px 20px; display: inline-block;">Organizations</h1>
+            <a style="margin-top: 10px;" href="" [routerLink]="['./create-organization']" class="btn btn-lg btn-primary pull-right">Create organization</a>
+            <!--End Header page-->
+
+            <div class="card-pf">
+                <div class="card-pf-heading" (click)="edit()">
+                    <a href="" class="card-pf-heading-details">
+                        <i class="fa fa-trash-o"></i>
+                        <span class="sr-only">Delete Project sample-project</span>
+                    </a>
+                    <h2 class="card-pf-title"><a href="">OpenShift sample project</a></h2>
+                    <div>
+                        <span>This is a sample project to demonstrate OpenShift v3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

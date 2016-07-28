@@ -1,3 +1,5 @@
+"use strict";
+
 // SystemJS configuration file, see links for more information
 // https://github.com/systemjs/systemjs
 // https://github.com/systemjs/systemjs/blob/master/docs/config-api.md
@@ -44,21 +46,17 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
-  'app/my-component',
-  'app/layout',
-  'app/layout/header',
-  'app/layout/sidebar',
-  'app/layout/container',
-  'app/pages/home',
-  'app/pages/about',
-  'app/modules/facturas',
-  'app/modules/boletas',
-  'app/modules/facturas/facturas-nuevo',
-  'app/modules/facturas/facturas-editar',
-  'app/layout/header/default-header',
-  'app/layout/header/project-header',
-  'app/layout/header/navbar-utility',
-  'app/layout/header/navbar-utility-mobile',
+  'app/directives/navbar-utility',
+  'app/directives/default-header',  
+  'app/directives/project-header',
+  'app/organizations',
+  'app/organizations/create-organization',    
+  'app/organizations/edit-organization',
+  'app/organizations/edit-organization/overview',
+  'app/organizations/edit-organization/settings',  
+  'app/directives/project-page',
+  'app/directives/sidebar',
+  'app/directives/events-sidebar',
   /** @cli-barrel */
 ];
 

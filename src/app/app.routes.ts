@@ -1,26 +1,17 @@
-import { provideRouter, RouterConfig }  from '@angular/router';
+import { provideRouter, RouterConfig } from '@angular/router';
 
-import { HomeComponent } from './pages/home';
-import { AboutComponent } from './pages/about';
-import { FacturaRoutes } from './modules/facturas';
+import { OrganizationsRoutes }    from './organizations/organizations.routes';
+
+// Route Configuration
 export const routes: RouterConfig = [
-  /*{
+  {
     path: '',
-    redirectTo: '/home'
+    redirectTo: '/organizations',
     pathMatch: 'full'
-  },*/
-  {
-    path: 'home',
-    component: HomeComponent
   },
-  {
-    path: 'about',
-    component: AboutComponent
-  },
-  ...FacturaRoutes
+  ...OrganizationsRoutes,
 ];
 
 export const APP_ROUTER_PROVIDERS = [
   provideRouter(routes)
 ];
-

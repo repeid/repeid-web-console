@@ -1,15 +1,12 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { HeaderComponent } from './layout/header';
-import { SidebarComponent } from './layout/sidebar';
-import { ContainerComponent } from './layout/container';
+import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  encapsulation: ViewEncapsulation.None,
-  directives: [HeaderComponent, SidebarComponent, ContainerComponent]
+  directives: [ROUTER_DIRECTIVES]
 })
 export class AppComponent {
   title = 'app works!';
