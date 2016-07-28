@@ -14,18 +14,21 @@
             <a style="margin-top: 10px;" href="" [routerLink]="['./create-organization']" class="btn btn-lg btn-primary pull-right">Create organization</a>
             <!--End Header page-->
 
-            <div class="card-pf">
-                <div class="card-pf-heading" (click)="editProject('master')">
-                    <a href="" class="card-pf-heading-details">
+            <div *ngFor="let item of projects" class="card-pf">
+                <div class="card-pf-heading">
+                    <a href="javascript:void(0)" class="card-pf-heading-details" (click)="deleteOrganization(item)">
                         <i class="fa fa-trash-o"></i>
-                        <span class="sr-only">Delete Project sample-project</span>
+                        <span class="sr-only">Delete Project {{item.name}}</span>
                     </a>
-                    <h2 class="card-pf-title"><a href="">OpenShift sample project</a></h2>
-                    <div>
-                        <span>This is a sample project to demonstrate OpenShift v3</span>
+                    <h2 class="card-pf-title">
+                        <a href="javascript:void(0)" (click)="editOrganization(item)">{{item.name}}</a>
+                    </h2>
+                    <div style="margin-bottom: 10px;">
+                        <span>{{item.description}}</span>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
