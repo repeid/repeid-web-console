@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 import { NavbarUtilityComponent } from '../navbar-utility';
 
@@ -11,9 +11,19 @@ import { NavbarUtilityComponent } from '../navbar-utility';
 })
 export class DefaultHeaderComponent implements OnInit {
 
-  constructor() { }
+  isCollapsed: boolean;
+  
+  @Output() onCollapsedChanged = new EventEmitter<boolean>();
+
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  changeCollapsed() {
+    this.isCollapsed = !this.isCollapsed;
+    this.onCollapsedChanged.emit(this.isCollapsed);
   }
 
 }

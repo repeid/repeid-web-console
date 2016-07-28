@@ -57,6 +57,7 @@ const barrels: string[] = [
   'app/directives/project-page',
   'app/directives/sidebar',
   'app/directives/events-sidebar',
+  'app/directives/navbar-utility-mobile',
   /** @cli-barrel */
 ];
 
