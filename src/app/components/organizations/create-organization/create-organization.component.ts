@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DefaultHeaderComponent } from '../../directives/default-header';
+import { DefaultHeaderComponent } from '../../../directives/default-header';
 
 @Component({
   moduleId: module.id,

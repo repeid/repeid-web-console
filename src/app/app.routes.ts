@@ -1,7 +1,8 @@
 import { provideRouter, RouterConfig } from '@angular/router';
-import { OrganizationsRoutes } from './organizations/organizations.routes';
+
 import { AboutComponent } from './components/about';
 import { ErrorComponent } from './components/error';
+import { OrganizationsRoutes } from './components/organizations/organizations.routes';
 
 // Route Configuration
 export const routes: RouterConfig = [

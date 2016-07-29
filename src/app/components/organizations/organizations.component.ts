@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 import { Router } from '@angular/router';
 
-import {CollapseDirective} from 'ng2-bootstrap';
+import { CollapseDirective } from 'ng2-bootstrap';
 
-import { DefaultHeaderComponent } from '../directives/default-header';
-import { NavbarUtilityMobileComponent } from '../directives/navbar-utility-mobile';
+import { DefaultHeaderComponent } from '../../directives/default-header';
+import { NavbarUtilityMobileComponent } from '../../directives/navbar-utility-mobile';
 
-import { OrganizationModel } from '../models/organization-model';
-import { AlertModel } from '../models/alert-model';
+import { OrganizationModel } from '../../models/organization-model';
+import { AlertModel } from '../../models/alert-model';
 
-import { AlertMessageService } from '../services/alert-message.service';
-import { AuthService } from '../services/auth.service';
-import { OrganizationService } from '../services/organization.service';
+import { AlertMessageService } from '../../services/alert-message.service';
+import { AuthService } from '../../services/auth.service';
+import { OrganizationService } from '../../services/organization.service';
 
 @Component({
   moduleId: module.id,
