@@ -4,21 +4,17 @@ import { Subject }    from 'rxjs/Subject';
 @Injectable()
 export class NavbarService {
 
-  // Observable string sources
-  private missionAnnouncedSource = new Subject<string>();
-  private missionConfirmedSource = new Subject<string>();
+  isCollapsed: boolean;
+  private isCollapsedSource = new Subject<boolean>();
+  isCollapsed$ = this.isCollapsedSource.asObservable();
 
-  // Observable string streams
-  missionAnnounced$ = this.missionAnnouncedSource.asObservable();
-  missionConfirmed$ = this.missionConfirmedSource.asObservable();
+  changeCollapsed() {
+    this.isCollapsed = !this.isCollapsed;
+    this.isCollapsedSource.next(this.isCollapsed);
+  }
 
-  // Service message commands
-  announceMission(mission: string) {
-    this.missionAnnouncedSource.next(mission);
-  }
-  
-  confirmMission(astronaut: string) {
-    this.missionConfirmedSource.next(astronaut);
-  }
+  getIsCollapsed() {
+    return this.isCollapsed;
+  }  
 
 }

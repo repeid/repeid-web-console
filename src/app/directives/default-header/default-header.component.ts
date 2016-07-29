@@ -1,6 +1,9 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 
 import { NavbarUtilityComponent } from '../navbar-utility';
+
+import { Subscription }   from 'rxjs/Subscription';
+import { NavbarService } from '../../services/navbar.service';
 
 @Component({
   moduleId: module.id,
@@ -9,21 +12,25 @@ import { NavbarUtilityComponent } from '../navbar-utility';
   styleUrls: ['default-header.component.css'],
   directives: [NavbarUtilityComponent]
 })
-export class DefaultHeaderComponent implements OnInit {
-
+export class DefaultHeaderComponent implements OnInit, OnDestroy {
   isCollapsed: boolean;
+  subscription: Subscription;
   
-  @Output() onCollapsedChanged = new EventEmitter<boolean>();
-
-  constructor() {
+  constructor(private navbarService: NavbarService) {
+    this.subscription = navbarService.isCollapsed$.subscribe(isCollapsed => {
+      this.isCollapsed = isCollapsed;
+    });
   }
 
   ngOnInit() {
   }
 
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
+
   changeCollapsed() {
-    this.isCollapsed = !this.isCollapsed;
-    this.onCollapsedChanged.emit(this.isCollapsed);
+    this.navbarService.changeCollapsed();
   }
 
 }
