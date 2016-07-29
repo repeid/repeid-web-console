@@ -49,15 +49,17 @@ const barrels: string[] = [
   'app/directives/navbar-utility',
   'app/directives/default-header',  
   'app/directives/project-header',
+  'app/directives/project-page',
+  'app/directives/sidebar',
+  'app/directives/events-sidebar',
+  'app/directives/navbar-utility-mobile', 
   'app/organizations',
   'app/organizations/create-organization',    
   'app/organizations/edit-organization',
   'app/organizations/edit-organization/overview',
-  'app/organizations/edit-organization/settings',  
-  'app/directives/project-page',
-  'app/directives/sidebar',
-  'app/directives/events-sidebar',
-  'app/directives/navbar-utility-mobile',
+  'app/organizations/edit-organization/settings',
+  'app/components/about',
+  'app/components/error',
   /** @cli-barrel */
 ];
 

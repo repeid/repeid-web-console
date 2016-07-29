@@ -1,6 +1,7 @@
 import { provideRouter, RouterConfig } from '@angular/router';
-
-import { OrganizationsRoutes }    from './organizations/organizations.routes';
+import { OrganizationsRoutes } from './organizations/organizations.routes';
+import { AboutComponent } from './components/about';
+import { ErrorComponent } from './components/error';
 
 // Route Configuration
 export const routes: RouterConfig = [
@@ -9,6 +10,8 @@ export const routes: RouterConfig = [
     redirectTo: '/organizations',
     pathMatch: 'full'
   },
+  { path: 'about', component: AboutComponent },
+  { path: 'error', component: ErrorComponent },
   ...OrganizationsRoutes,
 ];
 
